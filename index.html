@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작업지휘자 평가문제</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contact-label {
+            width: 45px !important;
+            min-width: 45px !important;
+            flex-shrink: 0 !important; 
+        }
+        .contact-label.medium-label {
+            width: 75px !important;
+            min-width: 75px !important;
+        }
+        .contact-label.wide-label {
+            width: 100px !important; 
+            min-width: 100px !important;
+        }
+        .contact-row input[type="text"] {
+            flex: 1 !important; 
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>작업지휘자 평가문제</h1>
+        <p>인적사항 입력 후 문제를 풀어주세요.</p>
+
+        <form id="quizForm">
+            <div class="form-group info-group">
+                <label for="department">소속:</label>
+                <input type="text" id="department" placeholder="회사명 기입" required>
+            </div>
+
+            <div class="form-group info-group">
+                <label for="username">이름:</label>
+                <input type="text" id="username" placeholder="이름을 입력하세요" required>
+            </div>
+
+            <div class="form-group info-group info-last">
+                <label for="role">직급/직무:</label>
+                <input type="text" id="role" placeholder="직종 기입" required>
+            </div>
+
+            <div class="form-group">
+                <label>문제 1. 작업 시 비치해야 할 필수 서류 5가지를 작성하시오.</label>
+                <div class="contact-row">
+                    <span class="contact-label">1. </span>
+                    <input type="text" id="q1_in_1" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">2. </span>
+                    <input type="text" id="q1_in_2" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">3. </span>
+                    <input type="text" id="q1_in_3" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">4. </span>
+                    <input type="text" id="q1_in_4" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">5. </span>
+                    <input type="text" id="q1_in_5" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 2. GAS 배관 철거 5대 수칙이 아닌 것은?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q2" value="1"> 1. 철거 대상 배관 스티커 부착 (직선2.5M)</label>
+                    <label><input type="radio" name="q2" value="2"> 2. 절단 작업 시 적정공구 사용</label>
+                    <label><input type="radio" name="q2" value="3"> 3. 철거 GAS Line Ring 적용으로 오절단 방지</label>
+                    <label><input type="radio" name="q2" value="4"> 4. 철거 스티커 중간부위 절단</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 3. 다음 중 C급 위험작업이 아닌 것은?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q3" value="1"> 1. 지게차 작업</label>
+                    <label><input type="radio" name="q3" value="2"> 2. 전기 작업</label>
+                    <label><input type="radio" name="q3" value="3"> 3. 굴착/매설 작업</label>
+                    <label><input type="radio" name="q3" value="4"> 4. Pump 신규설치/교체 작업</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 4. 반면형 방독마스크에 결합하는 필터의 명칭과 교체 주기를 작성하시오.</label>
+                <div class="contact-row">
+                    <span class="contact-label medium-label">명칭: </span>
+                    <input type="text" id="q4_in_1" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label medium-label">교체 주기: </span>
+                    <input type="text" id="q4_in_2" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 5. 다음 중 안전팀 검수 항목이 아닌 것은?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q5" value="1"> 1. 아크 용접기</label>
+                    <label><input type="radio" name="q5" value="2"> 2. 전동 리프트</label>
+                    <label><input type="radio" name="q5" value="3"> 3. 고소작업대</label>
+                    <label><input type="radio" name="q5" value="4"> 4. 이동식 대차 (500Kg 이상)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 6. TBM 목적에 해당하지 않은 것은?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q6" value="1"> 1. 당일 작업에 대한 사전 잠재적 위험 예방</label>
+                    <label><input type="radio" name="q6" value="2"> 2. 작업구역 내 위험요인 사전 주지</label>
+                    <label><input type="radio" name="q6" value="3"> 3. 작업에 사용하는 기계/공도구 주의 교육</label>
+                    <label><input type="radio" name="q6" value="4"> 4. 작업 일정 단축 방안 공유</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 7. 작업현장의 유해위험요인을 미리 찾아내어 위험성의 빈도 및 크기를 추정하여 사전에 유해위험요인을 제거 또는 관리하여 피해를 최소화하는 평가는 무엇인가?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q7" value="1"> 1. 아차사고발굴</label>
+                    <label><input type="radio" name="q7" value="2"> 2. PATROL</label>
+                    <label><input type="radio" name="q7" value="3"> 3. 위험성평가</label>
+                    <label><input type="radio" name="q7" value="4"> 4. 안전활동</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 8. 다음 안전보호구의 방호 기능을 작성 하시오.</label>
+                <div class="contact-row">
+                    <span class="contact-label wide-label">1. 안전모: </span>
+                    <input type="text" id="q8_in_1" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label wide-label">2. 안전벨트: </span>
+                    <input type="text" id="q8_in_2" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label wide-label">3. 안전화: </span>
+                    <input type="text" id="q8_in_3" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label wide-label">4. 보안경: </span>
+                    <input type="text" id="q8_in_4" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 9. 물질안전보건자료의 항목에 포함되지 않는 것은?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="q9" value="1"> 1. 제품 및 회사 정보</label>
+                    <label><input type="radio" name="q9" value="2"> 2. 구성성분의 명칭 및 함유량</label>
+                    <label><input type="radio" name="q9" value="3"> 3. 사고 시 대처방법</label>
+                    <label><input type="radio" name="q9" value="4"> 4. 제품 Recall 이력</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>문제 10. 3정5S를 작성하시오.</label>
+                <div class="contact-row">
+                    <span class="contact-label">3정: </span>
+                    <input type="text" id="q10_in_1" placeholder="">
+                </div>
+                <div class="contact-row">
+                    <span class="contact-label">5S: </span>
+                    <input type="text" id="q10_in_2" placeholder="">
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">제출하기</button>
+        </form>
+
+        <div id="resultMessage" class="hidden">
+            <h3>제출이 완료되었습니다.</h3>
+            <p style="font-size: 20px; font-weight: bold; color: #d93025; margin-top: 10px;">
+                내 점수: <span id="scoreDisplay">0</span> / 100점
+            </p>
+        </div>
+    </div>
+
+<script>
+        // 1. 마우스 우클릭 방지
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 2. 키보드 복사(Ctrl+C), 잘라내기(Ctrl+X), 붙여넣기(Ctrl+V) 방지
+        document.addEventListener('copy', function(e) { e.preventDefault(); });
+        document.addEventListener('cut', function(e) { e.preventDefault(); });
+        document.addEventListener('paste', function(e) { e.preventDefault(); });
+
+        </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
